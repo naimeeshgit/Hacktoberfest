@@ -1,1 +1,0 @@
-{"name":"Local: 16","url":"/home/naimeesh/Revision for Aug/codeskool probset/16.cpp","tests":[{"id":1655220540787,"input":"6\n03:12 360\n00:00 1\n13:22 2\n15:15 10\n11:11 1440\n22:30 27\n","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/naimeesh/Revision for Aug/codeskool probset/16.cpp","group":"local","local":true}
