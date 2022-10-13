@@ -1,0 +1,36 @@
+{
+	"short_name": "edge",
+	"name": "Knox Edge",
+	"description": "plugin for knox edge",
+	"version": "1.0",
+	"manifest_version": 2,
+	"browser_action": {
+		"default_popup": "index.html",
+		"default_title": "open knox edge"
+	},
+	"icons": {
+		"16": "knoxlogo.png",
+		"48": "knoxlogo.png",
+		"128": "knoxlogo.png"
+	},
+	"externally_connectable": {
+		"matches": ["http://localhost:3000/*", "http://localhost:3050/*"]
+	},
+    "content_security_policy": "script-src 'self' https://apis.google.com https://identitytoolkit.googleapis.com https://jotathot-2f32b.firebaseapp.com 'unsafe-eval'; object-src 'self'",
+	"content_scripts": [
+		{
+			"matches": ["<all_urls>"],
+			"js": ["content.js"],
+			"run_at": "document_start"
+		}
+	],
+	"permissions": [
+		"storage",
+		"tabs",
+		"system.display",
+		"identity"
+	],
+	"background": {
+		"scripts": ["background.js"]
+	}
+}
